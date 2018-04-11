@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyRide</string>
+
+    <string name="type_bike">Bike</string>
+    <string name="type_car">Car</string>
+    <string name="add">Add</string>
+
+</resources>

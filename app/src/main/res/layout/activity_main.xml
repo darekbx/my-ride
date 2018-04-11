@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_transport"
+        android:background="@drawable/bg_animated_blob_curve"
+        android:padding="@dimen/padding"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.myride.ui.custom.Wheel
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="59dp"
+        android:layout_marginLeft="139dp"
+        />
+    <com.myride.ui.custom.Wheel
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="59dp"
+        android:layout_marginLeft="190dp"
+        />
+
+    <com.myride.ui.chart.EntriesChart
+        android:id="@+id/bike_chart"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        app:chartColor="@color/chart_bike"
+        app:layout_constraintTop_toBottomOf="@id/header_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.myride.ui.chart.EntriesChart
+        android:id="@+id/car_chart"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        app:chartColor="@color/chart_car"
+        app:layout_constraintTop_toBottomOf="@id/bike_chart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundTint="@color/cyan"
+        android:layout_margin="24dp"
+        android:onClick="onNewClick"
+        />
+
+</android.support.constraint.ConstraintLayout>

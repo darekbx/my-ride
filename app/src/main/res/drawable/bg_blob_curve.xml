@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="64dp"
+    android:width="64dp"
+    android:viewportHeight="100"
+    android:viewportWidth="800">
+    <path
+        android:name="blob_path"
+        android:fillColor="@color/cyan"
+        android:pathData="M0 0 C 0 90, 350 90, 400 90, 500 90, 800 90, 800 0" />
+</vector>

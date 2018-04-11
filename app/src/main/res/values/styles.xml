@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor">@color/cyan</item>
+        <item name="android:colorPrimaryDark">@color/cyan</item>
+    </style>
+
+</resources>
