@@ -35,6 +35,20 @@
         android:layout_marginTop="59dp"
         android:layout_marginLeft="190dp"
         />
+    <com.myride.ui.mountains.Mountain
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <com.myride.ui.wind.Wind
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        />
 
     <com.myride.ui.chart.EntriesChart
         android:id="@+id/bike_chart"
