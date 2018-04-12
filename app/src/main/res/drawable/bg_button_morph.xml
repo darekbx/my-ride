@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="64dp"
+    android:width="64dp"
+    android:viewportHeight="120"
+    android:viewportWidth="120">
+    <path
+        android:name="morph_path"
+        android:fillColor="@color/cyan"
+        android:pathData="M107,60 100,85 82,103 57,110 32,103 14,85 7,60 14,35 32,17 57,10 82,17 100,35 107,60" />
+    <!--<path
+        android:name="morph"
+        android:fillColor="@color/cyan"
+        android:pathData="M108,60 110,85 72,113 50,115 32,113 6,85 7,60 9,20 32,17 47,10 89,17 110,35 107,60" />-->
+</vector>

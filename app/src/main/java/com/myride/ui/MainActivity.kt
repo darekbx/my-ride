@@ -6,8 +6,10 @@ import android.graphics.drawable.Animatable2
 import android.graphics.drawable.AnimatedVectorDrawable
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import android.widget.ImageButton
 import com.myride.R
 import com.myride.model.EntryType
 import com.myride.ui.chart.EntriesChart
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         animateHeader()
+        animateButton()
 
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         with(viewModel) {
@@ -35,6 +38,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun animateHeader() {
         val header = findViewById(R.id.header_text) as View
+        val drawable = header.background as AnimatedVectorDrawable
+
+        with(drawable) {
+            registerAnimationCallback(object : Animatable2.AnimationCallback() {
+                override fun onAnimationEnd(drawable: Drawable?) {
+                    start()
+                }
+            })
+            start()
+        }
+    }
+
+    private fun animateButton() {
+        val header = findViewById(R.id.add_button) as View
         val drawable = header.background as AnimatedVectorDrawable
 
         with(drawable) {

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:duration="1800"
+        android:propertyName="pathData"
+        android:valueFrom="M107,60 100,85 82,103 57,110 32,103 14,85 7,60 14,35 32,17 57,10 82,17 100,35 107,60"
+        android:valueTo="M108,60 110,85 72,113 50,115 32,113 6,85 7,60 9,20 32,17 47,10 89,17 110,35 107,60"
+        android:valueType="pathType"/>
+    <objectAnimator
+        android:duration="1500"
+        android:startOffset="1800"
+        android:propertyName="pathData"
+        android:valueFrom="M108,60 110,85 72,113 50,115 32,113 6,85 7,60 9,20 32,17 47,10 89,17 110,35 107,60"
+        android:valueTo="M107,60 100,85 82,103 57,110 32,103 14,85 7,60 14,35 32,17 57,10 82,17 100,35 107,60"
+        android:valueType="pathType"/>
+</set>
