@@ -6,14 +6,13 @@ import android.graphics.drawable.Animatable2
 import android.graphics.drawable.AnimatedVectorDrawable
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.widget.ImageButton
 import com.myride.R
 import com.myride.model.EntryType
 import com.myride.ui.chart.EntriesChart
 import com.myride.ui.viewmodels.MainViewModel
+import kotlinx.coroutines.experimental.async
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +23,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         animateHeader()
-        animateButton()
+        //animateButton()
+
+        async { }
 
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         with(viewModel) {

@@ -73,15 +73,13 @@
 
         />
 
-    <ImageView
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/add_button"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/ic_plus"
-        android:scaleType="center"
-        android:background="@drawable/bg_animated_morph"
+        app:backgroundTint="@color/cyan"
         android:layout_margin="24dp"
         android:onClick="onNewClick"
         />

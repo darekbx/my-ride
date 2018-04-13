@@ -11,4 +11,8 @@
         android:name="morph"
         android:fillColor="@color/cyan"
         android:pathData="M108,60 110,85 72,113 50,115 32,113 6,85 7,60 9,20 32,17 47,10 89,17 110,35 107,60" />-->
+    <!--<path
+        android:name="morph"
+        android:fillColor="@color/cyan"
+        android:pathData="M108,60 110,85 72,113 50,115 32,113 6,85 7,60 9,20 32,17 47,10 89,17 110,35 107,60" />-->
 </vector>

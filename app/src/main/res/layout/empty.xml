@@ -6,7 +6,7 @@
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:background="@drawable/bg_button_morph"
+        android:background="@drawable/bg_morph_2"
         />
 
 </RelativeLayout>
