@@ -115,8 +115,8 @@ class EntriesChart(context: Context, val attrs: AttributeSet) : View(context, at
             }
         }
     }
-    private fun calculateChunkSize(entriesCount: Int) =
-            Math.floor((width - PADDING.times(2)).toDouble() / (entriesCount.dec()).toDouble()).toFloat()
+
+    private fun calculateChunkSize(entriesCount: Int) = (width - PADDING.times(2)) / (entriesCount.dec())
 
     private fun drawGuides(canvas: Canvas) {
         (1..10).forEach { value ->
